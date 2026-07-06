@@ -1,0 +1,33 @@
+{
+  "game_name": "FireZone Royale",
+  "genre": "2D Battle Royale",
+  "inspired_by": "Free Fire style gameplay",
+  "note": "Original prototype inspired by battle royale mechanics, not a direct clone.",
+  "world_size": 2200,
+  "player_speed": 280,
+  "bullet_speed": 860,
+  "enemy_count": 18,
+  "safe_zone": {
+    "start_radius": 980,
+    "end_radius": 150,
+    "shrink_delay_seconds": 18,
+    "shrink_duration_seconds": 150
+  },
+  "loot_count": 28,
+  "starting_loadout": {
+    "hp": 100,
+    "shield": 50,
+    "ammo": 72,
+    "medkits": 2
+  },
+  "future_upgrade_paths": [
+    "real multiplayer",
+    "voice chat",
+    "weapon classes",
+    "skins and progression",
+    "battle pass",
+    "ranked mode",
+    "android packaging",
+    "ios packaging"
+  ]
+}

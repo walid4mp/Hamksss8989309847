@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FireZone Royale</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="hudTop">
+    <div class="brand">
+      <div class="logo">FZ</div>
+      <div>
+        <h1>FireZone Royale</h1>
+        <p>لعبة باتل رويال مستوحاة من أسلوب فري فاير</p>
+      </div>
+    </div>
+    <div class="badges">
+      <span id="aliveBadge">اللاعبون: 0</span>
+      <span id="zoneBadge">المنطقة: 100%</span>
+      <span id="ammoBadge">الذخيرة: 0</span>
+    </div>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="crosshair"></div>
+
+  <div id="minimapWrap">
+    <canvas id="minimap" width="170" height="170"></canvas>
+  </div>
+
+  <div id="bottomHud">
+    <div class="panel hpPanel">
+      <div class="labelRow"><span>الصحة</span><span id="hpText">100 / 100</span></div>
+      <div class="bar"><div id="hpBar" class="fill hp"></div></div>
+    </div>
+    <div class="panel hpPanel">
+      <div class="labelRow"><span>الدرع</span><span id="shieldText">50 / 50</span></div>
+      <div class="bar"><div id="shieldBar" class="fill shield"></div></div>
+    </div>
+    <div class="panel tipsPanel">
+      <div>WASD للحركة • ماوس للتصويب • كليك للإطلاق</div>
+      <div>F لالتقاط الأدوات • E لاستخدام الإسعاف • R لإعادة التذخير</div>
+    </div>
+  </div>
+
+  <div id="overlay" class="show">
+    <div class="card">
+      <div class="tag">نسخة جاهزة قابلة للعب</div>
+      <h2>FireZone Royale</h2>
+      <p>
+        لعبة ويب 2D مستوحاة من أجواء الباتل رويال: هبوط سريع، خصوم AI، منطقة آمنة بتصغر، ذخيرة وإسعافات، وفوز عند البقاء الأخير.
+      </p>
+      <ul>
+        <li>أسلوب لعب سريع ومظهر حديث</li>
+        <li>خصوم ذكاء اصطناعي</li>
+        <li>منطقة آمنة متحركة</li>
+        <li>ملفات مطور وتعليمات تشغيل</li>
+      </ul>
+      <button id="startBtn">ابدأ اللعب</button>
+      <p class="mini">مهم: دي نسخة أصلية مستوحاة من النوع، وليست نسخة مطابقة للعبة Free Fire.</p>
+    </div>
+  </div>
+
+  <div id="gameOver" class="hidden">
+    <div class="card resultCard">
+      <div id="resultTag" class="tag">انتهت الجولة</div>
+      <h2 id="resultTitle">Game Over</h2>
+      <p id="resultText">جرّب مرة تانية</p>
+      <button id="restartBtn">إعادة اللعب</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
